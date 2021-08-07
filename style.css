@@ -18,6 +18,9 @@
     font-size: 30px;
     font-weight: 1000;
   }
+  span {
+    text-align: left;
+  }
   /* Menu */
   #menu-div {
     width: 100%;
@@ -85,12 +88,17 @@
     width: 90%;
     display: inline-block;
   }
-  #main-article img {
+  #img-love {
     margin: 15px;
     width: 72%;
     height: 40%;
     border: 5px double black;
     margin-top: 50px;
+  }
+  #img-cartoon {
+    width: 500px;
+    height: 500px;
+    padding-top: 100px;
   }
   #main-article h2 {
     padding-top: 100px;
@@ -116,7 +124,7 @@
     opacity: 0.9;
   }
   #main-article ul {
-    padding-bottom: 20px;
+    padding-bottom: 70px;
   }
   #main-empty {
     width: 100%;
