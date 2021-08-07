@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Morse Code Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="start();">
+  <div id="menu-div"> 
+    <div id="menu-icon">
+      <a href="../index.html"><img src="../Images/Home/IC-logo.png"></a>
+    </div>
+    
+    <div id="menu-tools">
+      <ul>
+        <li class="menu-tools-items"><a href="../Learning/index.html">Learn</a></li>
+        <li class="menu-tools-items"><a href="../Translate/index.html">Translate</a></li>
+        <li class="menu-tools-items"><a href="../Practice Numbers/index.html">Practice-Numbers</a></li>
+        <li class="menu-tools-items"><a href="../Practice Letters/index.html">Practice-Letters</a></li>
+      </ul>
+    </div>
+
+    <div id="menu-empty">
+
+    </div>
+  </div>
+
+  <div id="main-div">
+    <h1>Morse Code Numbers</h1>
+    <img class="soundIC" src="../Images/Practice Numbers/IC-sound.png" onclick = "playSounds();">
+    <img class="soundIC" src="../Images/Practice Numbers/IC-restart.png" onclick = "start();">
+    <br>
+    <button class="setUpTools" style = "background-color: yellow;" onclick="board.run();">
+      <p>Run</p>
+    </button>
+    <button class="setUpTools" style = "background-color: red;" onclick="board.clear();">
+      <p>Clear</p>
+    </button>
+
+    <div id="mainDiv">
+      <canvas id="myCanvas" width="300px" height="400px" class="boards"></canvas>
+      <img id="arrow" src="../Images/Practice Numbers/IC-arrow.png"onclick="need_run = 1; board.run();">
+      <canvas id="myCanvasPixel" width="300px" height="400px" class="boards"></canvas>
+      <img id="arrow" src="../Images/Practice Numbers/IC-arrow.png"onclick="need_run = 1; board.run();">
+      <canvas id="compareCanvas" width="300px" height="400px" class="boards"></canvas>
+    </div>
+
+    <img id="IC-submit" src="../Images/Practice Numbers/IC-submit.jpg" onclick = "checkResult();">
+    <button id="result">
+      <span>result: </span>
+      <span id ="resultPlace">__________</span>
+    </button>
+    <img src="../Images/Practice Numbers/IC-correct.png" id="correct">
+    <img src="../Images/Practice Numbers/IC-incorrect.png" id="incorrect">
+  </div>
+</body>
+  <script src="board.js"></script>
+  <script src="recognise.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</html>

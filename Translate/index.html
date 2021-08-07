@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Morse Code Project</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body onload="changeBG(LANG_BG, LANG_BG_EMPT);createData();">
+  <div id="menu-div">
+    <div id="menu-icon">
+      <a href="../index.html"><img src="../Images/Home/IC-logo.png"></a>
+    </div>
+    
+    <div id="menu-tools">
+      <ul>
+        <li class="menu-tools-items"><a href="../Learning/index.html">Learn</a></li>
+        <li class="menu-tools-items"><a href="../Translate/index.html">Translate</a></li>
+        <li class="menu-tools-items"><a href="../Practice Numbers/index.html">Practice-Numbers</a></li>
+        <li class="menu-tools-items"><a href="../Practice Letters/index.html">Practice-Letters</a></li>
+      </ul>
+    </div>
+ 
+    <div id="menu-empty"></div>
+  </div> 
+
+  <div id="main-div">
+    <div id="trans-div">
+      <div id="trans-setLang">
+        <div id="trans-setLang-langChosen">
+          <ul>
+            <li class="trans-langButton" id="inpAlp" onclick="typeLang = 0; changeLang();">WORDS</li>
+            <li class="trans-langButton" id="inpMC" onclick="typeLang = 1; changeLang();">MORSE CODE</li>
+          </ul>
+        </div>
+        <div id="trans-setLang-swap"><img src="../Images/Translate/IC-swap.png" onclick="changeLangButton();"></div>
+        <div id="trans-setLang-langTrans">
+          <ul>
+            <li class="trans-langButton" id="outMC" onclick="typeLang = 0; changeLang();"">MORSE CODE</li>
+            <li class="trans-langButton" id="outAlp" onclick="typeLang = 1; changeLang();">WORDS</li>
+          </ul>
+        </div>
+      </div>
+      <div id="trans-lineDivide"></div>
+      <div id="trans-input">
+        <textarea class="trans-InpOut" id="trans-input-type" placeholder="Enter your text here"></textarea>
+        <div class="trans-tools"></div>
+      </div>
+      <div id="trans-output">
+        <textarea class="trans-InpOut" id="trans-output-type"readonly placeholder="Translation"></textarea>
+        <div class="trans-tools">
+          <img src="../Images/Translate/IC-sound.png" id="trans-tools-firstPic" onclick="if(!typeLang)runSounds()";> 
+          <img src="../Images/Translate/IC-stop.png" onclick="stopSounds();"> 
+        </div>
+      </div>
+    </div>
+  </div> 
+</body>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</html>
+<!-- 
+  - translate morse code to words
+  - background of typing button
+  - sound icon: click again to stop audio
+  - add some tools
+-->

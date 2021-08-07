@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Morse Code Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onload="start();"> 
+  <div id="menu-div">
+    <div id="menu-icon">
+      <a href="../index.html"><img src="../Images/Home/IC-logo.png"></a>
+    </div>
+    
+    <div id="menu-tools">
+      <ul>
+        <li class="menu-tools-items"><a href="../Learning/index.html">Learn</a></li>
+        <li class="menu-tools-items"><a href="../Translate/index.html">Translate</a></li>
+        <li class="menu-tools-items"><a href="../Practice Numbers/index.html">Practice-Numbers</a></li>
+        <li class="menu-tools-items"><a href="../Practice Letters/index.html">Practice-Letters</a></li>
+      </ul>
+    </div>
+
+    <div id="menu-empty"></div>
+  </div>
+
+  <div id="main-div">
+    <h1>Morse Code Letters</h1>
+    <img class="soundIC" src="../Images/Practice Letters/IC-sound.png" onclick = "playSounds();">
+    <img class="soundIC" src="../Images/Practice Letters/IC-restart.png" onclick = "start();">
+    <div id="mainDiv">
+      <input type="text" id="wordsInp" name="wordsInp" placeholder="Enter your words...">
+    </div>
+    <img style="margin-top: 40px;width: 150px; height: 50px;" src="../Images/Practice Letters/IC-submit.jpg" onclick = "checkResult();">
+    <button id="result">
+      <span>result: </span>
+      <span id ="resultPlace">_______________________</span>
+    </button>
+    <img src="../Images/Practice Letters/IC-correct.png" id="correct">
+    <img src="../Images/Practice Letters/IC-incorrect.png" id="incorrect">
+  </div>
+</body>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</html>

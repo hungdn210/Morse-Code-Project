@@ -1,0 +1,180 @@
+<style>
+  body {
+    background-color: #ccc;
+    margin: auto;
+  }
+  /* Menu */
+  #menu-div {
+    width: 100%; 
+    height: 55px; 
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+  }
+  #menu-icon {
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #menu-icon img {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+  }
+  #menu-tools {
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+  }
+  #menu-tools ul {
+    padding: 0;
+  }
+  #menu-tools ul :hover {
+    color: #aaa;
+  }
+  .menu-tools-items{
+    margin-left: 20px;
+    display: inline-block;
+    overflow: hidden;
+  } 
+  .menu-tools-items a {
+    font-family: Courier New;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  #menu-empty {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+  }
+  /*Main Div*/
+  #main-div {
+    margin-left: 10%;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    display: inline-block;
+  }
+  #main-start {
+    display: inline-block;
+    margin-top: 200px;
+    display: none;
+    cursor: pointer;
+  }
+  #main-start img {
+    width: 500px;
+    height: 160px;
+  }
+  .main-options {
+    margin-top: 200px;
+    display: inline-block;
+    padding: 0px 100px;
+    display: none;
+  }
+  .main-options :hover {
+    cursor: pointer;
+  }
+  .main-options img {
+    width: 300px;
+    height: 300px;
+  }
+  /*card div */
+  #main-cards {
+    width: 300px;
+    height: 450px; 
+    display: inline-block;
+    margin-top: 50px;
+    border: inset 10px green;
+    background-color: lime;
+    text-align: center;
+    display: none;
+    cursor: default;
+  }
+  #main-cards-AP-div {
+    width: 200px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  #main-cards-MC-div {
+    width: 250px;
+    height: 125px;
+    display: inline-block;
+    margin-top: 25px;
+  }
+  #main-cards-alphabet {
+    font-size: 350px;
+    line-height: 250px;
+    font-family: Brush Script MT, Courier New;
+  }
+  #main-cards-morseCode {
+    font-size: 150px;
+    line-height: 100px;
+  }
+
+  /* practice div */
+  #main-practice {
+    width: 700px; 
+    height: 400px;
+    display: inline-block;
+    margin-top: 100px;
+    display: none;
+  }
+  #main-practice-question {
+    display: inline-block;
+  }
+  #main-practice-question img {
+    width: 700px;
+    height: 350px;
+  }
+  .main-practice-answers { 
+    display: inline-block;
+    margin-top: 50px;
+    cursor: pointer;
+  }
+  .main-practice-answers img {
+    width: 200px;
+    height: 100px;
+  }
+  #ans-1 {
+    margin-right: 40px;
+  }
+  #ans-2 {
+    margin-left: 40px;
+  }
+  /*Tool div*/
+  #tools-div {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #tools-nextCards {
+    display: inline-block;
+    cursor: pointer;
+    display: none;
+    margin-left: 550px;
+  }
+  #tools-nextCards img {
+    width: 200px;
+    height: 200px;
+  }
+  #tools-confidence {
+    display: inline-block;
+    display: none;
+    margin-left: 150px;
+    position: relative;
+    bottom: 50px;
+    cursor: pointer;
+  }
+  #tools-confidence img {
+    width: 400px;
+    height: 100px;
+  }
+</style>

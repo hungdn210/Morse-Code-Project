@@ -1,0 +1,128 @@
+<style>
+  body {
+    margin: auto;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  span {
+    font-size: 20px;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  /* Menu */ 
+  #menu-div {
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+  }
+  #menu-icon {
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #menu-icon img {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+  }
+  #menu-tools {
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+  }
+  #menu-tools ul {
+    padding: 0;
+  }
+  #menu-tools ul :hover {
+    color: #aaa;
+  }
+  .menu-tools-items{
+    margin-left: 20px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .menu-tools-items a {
+    font-family: Courier New;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  #menu-empty {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+  }
+  /*Main Div*/
+  #main-div {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  /*Practice numbers div*/
+  #mainDiv {
+    margin: auto;
+    margin-top: 20px;
+  }
+  .soundIC {
+    cursor: pointer;
+  }
+  #result {
+    margin-top: 20px;
+    background-color: yellow;
+    height: 50px; 
+    position:relative;
+    bottom: 20px;
+  }
+  #restart {
+    margin-top: 20px;
+    background-color: greenyellow;
+    width: 100px;
+    height: 50px;
+  }
+  #correct {
+    width: 50px;
+    height: 50px;
+    display: none;
+  }
+  #incorrect {
+    width: 50px;
+    height: 50px;
+    display: none;
+  }
+  .boards {
+    border: 2px solid black;
+  }
+  #arrow {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 150px;
+  }
+  #IC-submit {
+    margin-top: 40px;
+    width: 150px; 
+    height: 50px;
+    cursor: pointer;
+  }
+  .setUpTools {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 0px;
+    cursor: pointer;
+  }
+  #scaleCanvas {
+    display: none;
+  }
+
+</style>

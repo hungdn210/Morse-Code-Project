@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Morse Code Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="start();">
+  <div id="menu-div"> 
+    <div id="menu-icon">
+      <a href="../index.html"><img src="../Images/Home/IC-logo.png"></a>
+    </div>
+    
+    <div id="menu-tools">
+      <ul>
+        <li class="menu-tools-items"><a href="../Learning/index.html">Learn</a></li>
+        <li class="menu-tools-items"><a href="../Translate/index.html">Translate</a></li>
+        <li class="menu-tools-items"><a href="../Practice Numbers/index.html">Practice-Numbers</a></li>
+        <li class="menu-tools-items"><a href="../Practice Letters/index.html">Practice-Letters</a></li>
+      </ul>
+    </div>
+
+    <div id="menu-empty">
+
+    </div>
+  </div>
+
+  <div id="main-div">
+
+    <div id="main-start" onclick="delStart();"><img src="../Images/Learning/IC-start.jpg"></div>
+    <div class="main-options" id="main-op-numbers" onclick="typeFC = 0; run();changeFC();"><img src="../Images/Learning/IC-NB.png"></div>
+    <div class="main-options" id="main-op-letters" onclick="typeFC = 1; run();changeFC();"><img src="../Images/Learning/IC-LT.png"></div>
+
+    <div id="main-cards">
+      <div id="main-cards-AP-div"><span id="main-cards-alphabet"></span></div> 
+      <div id="main-cards-MC-div"><span id="main-cards-morseCode"></span></div>
+    </div>
+
+    <div id="main-practice">
+      <div id="main-practice-question"><img src="../Images/Learning/IC-question.png"></div>
+      <div class="main-practice-answers" id="ans-1" onclick="moveToPractice();"><img src="../Images/Learning/IC-answer-1.jpg"></div>
+      <div class="main-practice-answers" id="ans-2" onclick="moveToPractice();"><img src="../Images/Learning/IC-answer-2.jpg"></div>
+    </div>
+  </div>
+  <div id="tools-div">
+    <div id="tools-nextCards" onclick="changeFC();"><img src="../Images/Learning/IC-nextFC.jpg"></div>
+    <div id="tools-confidence" onclick="appearQues();"><img src="../Images/Learning/IC-confidence.jpg"></div>
+  </div> 
+</body>
+  <script src="script.js"></script>
+</html>

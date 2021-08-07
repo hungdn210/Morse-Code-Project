@@ -1,0 +1,179 @@
+<style>
+  body {
+    background-color: #ccc;
+    margin: auto;
+  }
+  input:focus, textarea:focus, select:focus{
+    outline: none; 
+  }
+  textarea {
+    border: none;
+    text-decoration: none;
+    font-family: Courier New;
+    font-size: 25px;
+    resize: none;
+  }
+  /* Menu */
+  #menu-div {
+    width: 100%;
+    height: 55px;
+    background-color: white;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+  }
+  #menu-icon {
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #menu-icon img {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+  }
+  #menu-tools {
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+  }
+  #menu-tools ul {
+    padding: 0;
+  }
+  #menu-tools ul :hover {
+    color: #aaa;
+  }
+  .menu-tools-items{
+    margin-left: 20px;
+    display: inline-block;
+    overflow: hidden;
+  }
+  .menu-tools-items a {
+    font-family: Courier New;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+  }
+  #menu-empty {
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    display: inline-block;
+    overflow: hidden;
+  }
+  /*Main Div*/
+  #main-div {
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+  } 
+  #trans-div {
+    width: 1000px;
+    height: 375px;
+    display: inline-block;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-align: center;
+  }
+  #trans-setLang {
+    width: 100%;
+    height: 70px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    text-align: center;
+    overflow: hidden;
+  }
+  #trans-setLang-langChosen {
+    width: 450px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+  }
+  .trans-langButton {
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto",arial,sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0px 10px;
+    position: relative;
+    bottom: 16px;
+    line-height: 70px;
+  }
+  
+  #trans-setLang-langChosen ul :hover {
+    background-color: #EDF1E8; 
+  }
+  #trans-setLang-swap {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+
+  }
+  #trans-setLang-swap img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  #trans-setLang-langTrans {
+    width: 450px;
+    height: 70px;
+    display: inline-block;
+    overflow: hidden;
+    text-align: left;
+  }
+  #trans-setLang-langTrans ul :hover {
+    background-color: #EDF1E8;
+  }
+  #trans-lineDivide {
+    width: 100%;
+    height: 1px;
+    background-color: #bbb;
+  }
+  #trans-input {
+    width: 497.5px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+    border-right: 1px solid gray;
+  }
+  .trans-InpOut {
+    margin-top: 20px;
+    width: 95%;
+    height: 230px;
+    display: inline-block;
+  }
+  .trans-tools {
+    width: 95%;
+    height: 50px;
+    text-align: left;
+  }
+  .trans-tools img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    padding-left: 10px;
+    cursor: pointer;
+  }
+  #trans-tools-firstPic {
+      padding-left: 30px;
+  }
+  #trans-output {
+    width: 497.5px;
+    height: 300px;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+  }
+  /*table div*/
+
+</style>
